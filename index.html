@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAAS and IAAS services</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 50px;
+            font-size: 2.2rem;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            width: 280px;
+            margin: 0;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-image {
+            width: 100%;
+            height: 160px;
+            object-fit: contain;
+            display: block;
+            border-bottom: 1px solid #eee;
+            padding: 20px;
+            box-sizing: border-box;
+            background: white;
+        }
+        
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+        }
+        
+        .card-title {
+            font-size: 1.2rem;
+            color: #34495e;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: auto;
+            width: 120px;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+        
+        /* Responsive */
+        @media (max-width: 900px) {
+            .container {
+                gap: 30px;
+            }
+            
+            .card {
+                width: 240px;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                gap: 25px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+                margin-bottom: 30px;
+            }
+            
+            .card {
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .card-image {
+                height: 140px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>PAAS and IAAS services</h1>
+    
+    <div class="container">
+        <!-- Fila 1 -->
+        <div class="card">
+            <img src="digitalocean.png" alt="DigitalOcean" class="card-image" onerror="this.src='https://via.placeholder.com/400x200?text=DigitalOcean'">
+            <div class="card-content">
+                <h3 class="card-title">DigitalOcean</h3>
+                <a href="https://pokemon-do-tch52.ondigitalocean.app/" class="btn" target="_blank">Access</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="ec2.png" alt="Amazon EC2" class="card-image" onerror="this.src='https://via.placeholder.com/400x200?text=Amazon+EC2'">
+            <div class="card-content">
+                <h3 class="card-title">Amazon EC2</h3>
+                <a href="https://buket-avatars.s3.us-east-1.amazonaws.com/Captura%20de%20pantalla%202025-05-15%20114820.png" class="btn" target="_blank">Access</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="heroku.png" alt="Heroku" class="card-image" onerror="this.src='https://via.placeholder.com/400x200?text=Heroku'">
+            <div class="card-content">
+                <h3 class="card-title">Heroku</h3>
+                <a href="https://poke-dockerhub-4fa3bf1e86a9.herokuapp.com/" class="btn" target="_blank">Access</a>
+            </div>
+        </div>
+        
+        <!-- Fila 2 -->
+        <div class="card">
+            <img src="railway.png" alt="Railway" class="card-image" onerror="this.src='https://via.placeholder.com/400x200?text=Railway'">
+            <div class="card-content">
+                <h3 class="card-title">Railway</h3>
+                <a href="https://pokemon-dockehub-production.up.railway.app/" class="btn" target="_blank">Access</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="vercel.png" alt="Vercel" class="card-image" onerror="this.src='https://via.placeholder.com/400x200?text=Vercel'">
+            <div class="card-content">
+                <h3 class="card-title">Vercel</h3>
+                <a href="https://pokemon-dockehub-vercel.vercel.app/" class="btn" target="_blank">Access</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
